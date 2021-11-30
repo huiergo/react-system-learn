@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import { Link } from "react-router-dom";
 class B extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +21,7 @@ class B extends React.Component {
   render() {
     return (
       <h1 onClick={this.handleClick}>
-        Hello, {this.state.name}
+        <Link to="/goods"> Hello, {this.state.name}</Link>
         {this.state.count}
       </h1>
     );
